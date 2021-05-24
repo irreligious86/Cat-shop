@@ -161,11 +161,14 @@ body {
     gap: 35px;
 
     .control-tools-title {
-
+      margin: 15px 5px;
+      font-weight: bold;
     }
 
     .control-tools-item {
-
+      * {
+        margin: 15px 5px;
+      }
     }
   }
 
@@ -445,7 +448,7 @@ body {
         font-weight: bold;
         font-size: 14px;
         line-height: 17px;
-        color:#FFFFFF;
+        color: #FFFFFF;
       }
     }
 
