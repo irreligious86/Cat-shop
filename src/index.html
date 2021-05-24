@@ -1,18 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title><%= htmlWebpackPlugin.options.title %></title>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+  <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 <body>
-<div class="wrapper">
-  <div class="header">
-
+<header class="header">
+  <div class="header-inner">
+    <nav class="header-inner-nav">
+      <a href="#" class="logo-link">
+        <img src="./img/logo1.svg" alt="" class="logo-img">
+      </a>
+      <ul class="main-navigation">
+        <li><a href="#">Main</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Profile</a></li>
+      </ul>
+    </nav>
+    <div class="header-inner-tel">
+      <span class="tel-number-digits">
+        +544 3490 00000
+      </span>
+      <span class="tel-number-comment">
+        Call soon!
+    </span>
+    </div>
   </div>
-  <div class="main">
+  <span class="header-report">Found 348 cats</span>
+</header>
+<div class="wrapper">
+  <main class="main">
     <div class="control-tools">
       <div class="control-tools-title">Sort by:</div>
       <div class="control-tools-item">Price</div>
@@ -22,81 +44,239 @@
       <li class="cat-item-wrapper">
         <div class="cat-item">
           <div class="cat-item-badges">
-            <span>-10$</span><span>heart</span>
+            <span class="discount invisible">-40%</span>
+            <span>
+                        <svg class="heart heart-active" width="46" height="46" viewBox="0 0 46 46" fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M33.7812 2.69531C31.2851 2.69531 28.9966 3.4863 26.9794 5.04634C25.0456 6.54197 23.758 8.44693 23 9.83214C22.242 8.44684 20.9544 6.54197 19.0206 5.04634C17.0034 3.4863 14.7149 2.69531 12.2188 2.69531C5.25298 2.69531 0 8.39293 0 15.9485C0 24.1112 6.55347 29.696 16.4746 38.1505C18.1593 39.5863 20.0689 41.2138 22.0538 42.9494C22.3154 43.1785 22.6514 43.3047 23 43.3047C23.3486 43.3047 23.6846 43.1785 23.9462 42.9495C25.9312 41.2136 27.8408 39.5862 29.5265 38.1496C39.4465 29.696 46 24.1112 46 15.9485C46 8.39293 40.747 2.69531 33.7812 2.69531Z"
+            fill="white" fill-opacity="0.3"/>
+        </svg>
+          </span>
           </div>
-          <img src="" alt="" class="cat-item-img">
+          <img src="./img/cat-img1.png" alt="cat-1" class="cat-item-img">
           <span class="cat-item-title">Tabby cat</span>
-          <div class="cat-item-data"></div>
+          <div class="cat-item-data">
+            <div class="cat-item-data-color_sample"></div>
+            <div class="cat-item-data-color_title">
+              <span>Brown color</span>
+            </div>
+            <div class="cat-item-data-age">
+              <span class="cat-item-data-age__title">Age:</span>
+              <span class="cat-item-data-age__value">4 month</span>
+            </div>
+            <div class="cat-item-data-limbs">
+              <span class="cat-item-data-limbs__title">Q-ty limbs:</span>
+              <span class="cat-item-data-limbs__value">4</span>
+            </div>
+          </div>
           <span class="cat-item-price">$500</span>
-          <div class="cat-item-action"></div>
+          <div class="cat-item-action">
+            <span class="cat-item-action__buy">Buy</span>
+          </div>
         </div>
       </li>
       <li class="cat-item-wrapper">
         <div class="cat-item">
-                    <div class="cat-item-badges">
-            <span>-10$</span><span>heart</span>
+          <div class="cat-item-badges">
+            <span class="discount invisible">-40%</span>
+            <span>
+            <svg class="heart" width="46" height="46" viewBox="0 0 46 46" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M33.7812 2.69531C31.2851 2.69531 28.9966 3.4863 26.9794 5.04634C25.0456 6.54197 23.758 8.44693 23 9.83214C22.242 8.44684 20.9544 6.54197 19.0206 5.04634C17.0034 3.4863 14.7149 2.69531 12.2188 2.69531C5.25298 2.69531 0 8.39293 0 15.9485C0 24.1112 6.55347 29.696 16.4746 38.1505C18.1593 39.5863 20.0689 41.2138 22.0538 42.9494C22.3154 43.1785 22.6514 43.3047 23 43.3047C23.3486 43.3047 23.6846 43.1785 23.9462 42.9495C25.9312 41.2136 27.8408 39.5862 29.5265 38.1496C39.4465 29.696 46 24.1112 46 15.9485C46 8.39293 40.747 2.69531 33.7812 2.69531Z"
+            fill="white" fill-opacity="0.3"/>
+        </svg>
+          </span>
           </div>
-          <img src="" alt="" class="cat-item-img">
+          <img src="./img/cat-img2.png" alt="" class="cat-item-img">
           <span class="cat-item-title">Tabby cat</span>
-          <div class="cat-item-data"></div>
+          <div class="cat-item-data">
+            <div class="cat-item-data-color_sample"></div>
+            <div class="cat-item-data-color_title">
+              <span>Brown color</span>
+            </div>
+            <div class="cat-item-data-age">
+              <span class="cat-item-data-age__title">Age:</span>
+              <span class="cat-item-data-age__value">4 month</span>
+            </div>
+            <div class="cat-item-data-limbs">
+              <span class="cat-item-data-limbs__title">Q-ty limbs:</span>
+              <span class="cat-item-data-limbs__value">4</span>
+            </div>
+          </div>
           <span class="cat-item-price">$600</span>
-          <div class="cat-item-action"></div>
+          <div class="cat-item-action">
+            <span class="cat-item-action__buy">Buy</span>
+          </div>
         </div>
       </li>
       <li class="cat-item-wrapper">
         <div class="cat-item">
-                    <div class="cat-item-badges">
-            <span>-10$</span><span>heart</span>
+          <div class="cat-item-badges">
+            <span class="discount">-40%</span>
+            <span>
+            <svg class="heart" width="46" height="46" viewBox="0 0 46 46" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M33.7812 2.69531C31.2851 2.69531 28.9966 3.4863 26.9794 5.04634C25.0456 6.54197 23.758 8.44693 23 9.83214C22.242 8.44684 20.9544 6.54197 19.0206 5.04634C17.0034 3.4863 14.7149 2.69531 12.2188 2.69531C5.25298 2.69531 0 8.39293 0 15.9485C0 24.1112 6.55347 29.696 16.4746 38.1505C18.1593 39.5863 20.0689 41.2138 22.0538 42.9494C22.3154 43.1785 22.6514 43.3047 23 43.3047C23.3486 43.3047 23.6846 43.1785 23.9462 42.9495C25.9312 41.2136 27.8408 39.5862 29.5265 38.1496C39.4465 29.696 46 24.1112 46 15.9485C46 8.39293 40.747 2.69531 33.7812 2.69531Z"
+            fill="white" fill-opacity="0.3"/>
+        </svg>
+          </span>
           </div>
-          <img src="" alt="" class="cat-item-img">
+          <img src="./img/cat-img3.png" alt="" class="cat-item-img">
           <span class="cat-item-title">Tabby cat</span>
-          <div class="cat-item-data"></div>
+          <div class="cat-item-data">
+            <div class="cat-item-data-color_sample"></div>
+            <div class="cat-item-data-color_title">
+              <span>Brown color</span>
+            </div>
+            <div class="cat-item-data-age">
+              <span class="cat-item-data-age__title">Age:</span>
+              <span class="cat-item-data-age__value">4 month</span>
+            </div>
+            <div class="cat-item-data-limbs">
+              <span class="cat-item-data-limbs__title">Q-ty limbs:</span>
+              <span class="cat-item-data-limbs__value">4</span>
+            </div>
+          </div>
           <span class="cat-item-price">$500</span>
-          <div class="cat-item-action"></div>
+          <div class="cat-item-action">
+            <span class="cat-item-action__buy">Buy</span>
+          </div>
         </div>
       </li>
       <li class="cat-item-wrapper">
         <div class="cat-item">
-                    <div class="cat-item-badges">
-            <span>-10$</span><span>heart</span>
+          <div class="cat-item-badges">
+            <span class="discount invisible">-40%</span>
+            <span>
+            <svg class="heart" width="46" height="46" viewBox="0 0 46 46" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M33.7812 2.69531C31.2851 2.69531 28.9966 3.4863 26.9794 5.04634C25.0456 6.54197 23.758 8.44693 23 9.83214C22.242 8.44684 20.9544 6.54197 19.0206 5.04634C17.0034 3.4863 14.7149 2.69531 12.2188 2.69531C5.25298 2.69531 0 8.39293 0 15.9485C0 24.1112 6.55347 29.696 16.4746 38.1505C18.1593 39.5863 20.0689 41.2138 22.0538 42.9494C22.3154 43.1785 22.6514 43.3047 23 43.3047C23.3486 43.3047 23.6846 43.1785 23.9462 42.9495C25.9312 41.2136 27.8408 39.5862 29.5265 38.1496C39.4465 29.696 46 24.1112 46 15.9485C46 8.39293 40.747 2.69531 33.7812 2.69531Z"
+            fill="white" fill-opacity="0.3"/>
+        </svg>
+          </span>
           </div>
-          <img src="" alt="" class="cat-item-img">
+          <img src="./img/cat-img4.png" alt="" class="cat-item-img">
           <span class="cat-item-title">Tabby cat</span>
-          <div class="cat-item-data"></div>
+          <div class="cat-item-data">
+            <div class="cat-item-data-color_sample"></div>
+            <div class="cat-item-data-color_title">
+              <span>Brown color</span>
+            </div>
+            <div class="cat-item-data-age">
+              <span class="cat-item-data-age__title">Age:</span>
+              <span class="cat-item-data-age__value">4 month</span>
+            </div>
+            <div class="cat-item-data-limbs">
+              <span class="cat-item-data-limbs__title">Q-ty limbs:</span>
+              <span class="cat-item-data-limbs__value">4</span>
+            </div>
+          </div>
           <span class="cat-item-price">$480</span>
-          <div class="cat-item-action"></div>
+          <div class="cat-item-action__sold">
+            <span>Sold</span>
+          </div>
         </div>
       </li>
       <li class="cat-item-wrapper">
         <div class="cat-item">
-                    <div class="cat-item-badges">
-            <span>-10$</span><span>heart</span>
+          <div class="cat-item-badges">
+            <span class="discount">-40%</span>
+            <span>
+            <svg class="heart" width="46" height="46" viewBox="0 0 46 46" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M33.7812 2.69531C31.2851 2.69531 28.9966 3.4863 26.9794 5.04634C25.0456 6.54197 23.758 8.44693 23 9.83214C22.242 8.44684 20.9544 6.54197 19.0206 5.04634C17.0034 3.4863 14.7149 2.69531 12.2188 2.69531C5.25298 2.69531 0 8.39293 0 15.9485C0 24.1112 6.55347 29.696 16.4746 38.1505C18.1593 39.5863 20.0689 41.2138 22.0538 42.9494C22.3154 43.1785 22.6514 43.3047 23 43.3047C23.3486 43.3047 23.6846 43.1785 23.9462 42.9495C25.9312 41.2136 27.8408 39.5862 29.5265 38.1496C39.4465 29.696 46 24.1112 46 15.9485C46 8.39293 40.747 2.69531 33.7812 2.69531Z"
+            fill="white" fill-opacity="0.3"/>
+        </svg>
+          </span>
           </div>
-          <img src="" alt="" class="cat-item-img">
+          <img src="./img/cat-img5.png" alt="" class="cat-item-img">
           <span class="cat-item-title">Tabby cat</span>
-          <div class="cat-item-data"></div>
+          <div class="cat-item-data">
+            <div class="cat-item-data-color_sample"></div>
+            <div class="cat-item-data-color_title">
+              <span>Brown color</span>
+            </div>
+            <div class="cat-item-data-age">
+              <span class="cat-item-data-age__title">Age:</span>
+              <span class="cat-item-data-age__value">4 month</span>
+            </div>
+            <div class="cat-item-data-limbs">
+              <span class="cat-item-data-limbs__title">Q-ty limbs:</span>
+              <span class="cat-item-data-limbs__value">4</span>
+            </div>
+          </div>
           <span class="cat-item-price">$550</span>
-          <div class="cat-item-action"></div>
+          <div class="cat-item-action">
+            <span class="cat-item-action__buy">Buy</span>
+          </div>
         </div>
       </li>
       <li class="cat-item-wrapper">
         <div class="cat-item">
-                    <div class="cat-item-badges">
-            <span>-10$</span><span>heart</span>
+          <div class="cat-item-badges">
+            <span class="discount invisible">-40%</span>
+            <span>
+            <svg class="heart heart-active" width="46" height="46" viewBox="0 0 46 46" fill="none"
+                 xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M33.7812 2.69531C31.2851 2.69531 28.9966 3.4863 26.9794 5.04634C25.0456 6.54197 23.758 8.44693 23 9.83214C22.242 8.44684 20.9544 6.54197 19.0206 5.04634C17.0034 3.4863 14.7149 2.69531 12.2188 2.69531C5.25298 2.69531 0 8.39293 0 15.9485C0 24.1112 6.55347 29.696 16.4746 38.1505C18.1593 39.5863 20.0689 41.2138 22.0538 42.9494C22.3154 43.1785 22.6514 43.3047 23 43.3047C23.3486 43.3047 23.6846 43.1785 23.9462 42.9495C25.9312 41.2136 27.8408 39.5862 29.5265 38.1496C39.4465 29.696 46 24.1112 46 15.9485C46 8.39293 40.747 2.69531 33.7812 2.69531Z"
+            fill="white" fill-opacity="0.3"/>
+        </svg>
+          </span>
           </div>
-          <img src="" alt="" class="cat-item-img">
+          <img src="./img/cat-img6.png" alt="" class="cat-item-img">
           <span class="cat-item-title">Tabby cat</span>
-          <div class="cat-item-data"></div>
+          <div class="cat-item-data">
+            <div class="cat-item-data-color_sample"></div>
+            <div class="cat-item-data-color_title">
+              <span>Brown color</span>
+            </div>
+            <div class="cat-item-data-age">
+              <span class="cat-item-data-age__title">Age:</span>
+              <span class="cat-item-data-age__value">4 month</span>
+            </div>
+            <div class="cat-item-data-limbs">
+              <span class="cat-item-data-limbs__title">Q-ty limbs:</span>
+              <span class="cat-item-data-limbs__value">4</span>
+            </div>
+          </div>
           <span class="cat-item-price">$400</span>
-          <div class="cat-item-action"></div>
+          <div class="cat-item-action__sold">
+            <span>Sold</span>
+          </div>
         </div>
       </li>
     </ul>
     <button class="show-more">Show more</button>
-  </div>
-  <div class="footer">
-
-  </div>
+    <div class="return-to-top">
+      <i class="fa fa-angle-up" aria-hidden="true"></i>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer-info">
+      <p class="footer-info-title">
+        Have time to buy!
+      </p>
+      <p class="footer-info-comment">
+        Subscribe and catch all the promotions.
+      </p>
+    </div>
+    <form class="footer-form">
+      <div class="footer-form-buttons">
+        <input type="email" class="email-input" value="Email">
+        <input type="button" class="send-button" value="Subscribe">
+      </div>
+      <div class="subscribe-checkbox">
+        <input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+        <label for="subscribeNews">Subscribe to newsletter</label>
+      </div>
+    </form>
+  </footer>
 </div>
 </body>
 </html>
