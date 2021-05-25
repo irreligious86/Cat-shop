@@ -140,8 +140,7 @@ body {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      background: #F3F3F3;
-      border-radius: 8px; }
+      background: #F3F3F3; }
       .main .cat-list .cat-item-wrapper .cat-item-badges {
         width: 75%;
         position: absolute;
@@ -232,7 +231,8 @@ body {
         font-style: normal;
         font-weight: bold;
         font-size: 16px;
-        color: #FFFFFF; }
+        color: #FFFFFF;
+        border-radius: 8px; }
         .main .cat-list .cat-item-wrapper .cat-item-action__buy:hover {
           cursor: -webkit-grab;
           cursor: grab; }
@@ -259,6 +259,10 @@ body {
     padding: 20px;
     border: 1px solid #CACACA;
     border-radius: 10px; }
+    .main .show-more:hover {
+      border: 1px solid #2c4b2d;
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+      transition: all .15s linear .05s; }
   .main .return-to-top {
     position: absolute;
     bottom: 0;
@@ -272,10 +276,14 @@ body {
     align-items: center;
     align-content: center;
     justify-content: center; }
+    .main .return-to-top:hover {
+      border: 1px solid #2c4b2d;
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+      transition: all .15s linear .05s; }
 
 .footer {
-  width: 1180px;
-  height: 312px;
+  width: calc(clamp(300px, 98vw, 1180px));
+  height: calc(max(312px, 100%));
   background-color: #1F2021;
   margin-top: 83px;
   margin-bottom: 113px;

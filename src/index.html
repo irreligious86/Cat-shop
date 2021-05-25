@@ -9,9 +9,10 @@
   <title>Cat shop</title>
 </head>
 <body>
-<header>
-  <div class="header">
-    <div class="header-inner">
+<header class="header">
+  <div class="header-bg"></div>
+  <div class="header-inner">
+    <div class="subinner-1">
       <nav class="header-inner-nav">
         <a href="#" id="main-title" class="logo-link">
           <img src="./img/logo1.svg" alt="" class="logo-img">
@@ -24,15 +25,15 @@
         </ul>
       </nav>
       <div class="header-inner-tel">
-      <span class="tel-number-digits">
-        +544 3490 00000
-      </span>
+        <a href="tel: +544 3490 00000" class="tel-number-digits">+544 3490 00000</a>
         <span class="tel-number-comment">
         Call soon!
     </span>
       </div>
     </div>
-    <span class="header-report">Found 348 cats</span>
+    <div class="subinner-2">
+      <span class="header-report">Found 348 cats</span>
+    </div>
   </div>
 </header>
 <div class="wrapper">
@@ -77,9 +78,7 @@
             </div>
           </div>
           <span class="cat-item-price">$500</span>
-          <div class="cat-item-action">
-            <span class="cat-item-action__buy">Buy</span>
-          </div>
+          <button class="cat-item-action__buy">Buy</button>
         </div>
       </li>
       <li class="cat-item-wrapper">
@@ -112,9 +111,7 @@
             </div>
           </div>
           <span class="cat-item-price">$600</span>
-          <div class="cat-item-action">
-            <span class="cat-item-action__buy">Buy</span>
-          </div>
+          <button class="cat-item-action__buy">Buy</button>
         </div>
       </li>
       <li class="cat-item-wrapper">
@@ -147,9 +144,7 @@
             </div>
           </div>
           <span class="cat-item-price">$500</span>
-          <div class="cat-item-action">
-            <span class="cat-item-action__buy">Buy</span>
-          </div>
+          <button class="cat-item-action__buy">Buy</button>
         </div>
       </li>
       <li class="cat-item-wrapper">
@@ -182,9 +177,7 @@
             </div>
           </div>
           <span class="cat-item-price">$480</span>
-          <div class="cat-item-action__sold">
-            <span>Sold</span>
-          </div>
+          <button class="cat-item-action__sold">Sold</button>
         </div>
       </li>
       <li class="cat-item-wrapper">
@@ -217,9 +210,7 @@
             </div>
           </div>
           <span class="cat-item-price">$550</span>
-          <div class="cat-item-action">
-            <span class="cat-item-action__buy">Buy</span>
-          </div>
+          <button class="cat-item-action__buy">Buy</button>
         </div>
       </li>
       <li class="cat-item-wrapper">
@@ -252,17 +243,15 @@
             </div>
           </div>
           <span class="cat-item-price">$400</span>
-          <div class="cat-item-action__sold">
-            <span>Sold</span>
-          </div>
+          <button class="cat-item-action__sold">Sold</button>
         </div>
       </li>
     </ul>
     <button class="show-more">Show more</button>
     <a href="#main-title">
       <div class="return-to-top">
-      <i class="fa fa-angle-up" aria-hidden="true"></i>
-    </div>
+        <i class="fa fa-angle-up" aria-hidden="true"></i>
+      </div>
     </a>
   </main>
   <footer class="footer">
