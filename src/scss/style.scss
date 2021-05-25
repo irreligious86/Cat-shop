@@ -423,8 +423,9 @@ body {
   background-color: #1F2021;
   margin-top: 83px;
   margin-bottom: 113px;
-  margin-left: 130px;
-  margin-right: 130px;
+  margin-left: 120px;
+  margin-right: 120px;
+  padding: 10px;
   color: #E5E5E5;
 
   display: flex;
@@ -439,7 +440,7 @@ body {
       font-family: Montserrat;
       font-style: normal;
       font-weight: bold;
-      font-size: 48px;
+      font-size: 42px;
       line-height: 59px;
     }
 
@@ -447,7 +448,7 @@ body {
       font-family: Montserrat;
       font-style: normal;
       font-weight: normal;
-      font-size: 28px;
+      font-size: 24px;
       line-height: 91.2%;
     }
   }
